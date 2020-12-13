@@ -82,7 +82,7 @@ In fact, if we log the action type it in the console, this is what we’ll get t
     {type: "@@redux/INITp.n.3.p.e.b"}
     ```
     Because we didn’t supply an initial state of the app, the state is undefined, so it defaults back to our initialState object.
-3) Your apps will most likely have more than one reducer, because they will be far more complex than a simple note / todo application. In such cases, you will want to write multiple reducers.Redux provides a function called ```combineReducers``` that lets us combine multiple reducers and pass them down to the createStore function as if they were a single reducer.   
+3) Your apps will most likely have more than one reducer. Redux provides a function called ```combineReducers``` that lets us combine multiple reducers and pass them down to the createStore function as if they were a single reducer.   
     ```js
     import notesReducer from './notesReducer';
     import visibilityFilter from './visibilityFilter';
